@@ -1,0 +1,20 @@
+* {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: none; 
+}
+:root {
+    /* Colors */
+    --primary: rgba(87,191,144,1.00);
+    --secondary: rgba(62,135,247,1.00);
+    --100: rgba(246,246,246,1.00);
+    --500: rgba(153,153,153,1.00);
+    --700: rgba(60,60,59,1.00);
+    --white: rgba(255,255,255,1.00);
+    --black: rgba(0,0,0,1.00);
+
+    /* Font */
+    --link: 
+}
