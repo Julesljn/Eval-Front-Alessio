@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
    padding: 0;
    margin: 0;
@@ -5,6 +7,7 @@
    text-decoration: none;
    box-sizing: none; 
 }
+
 :root {
     /* Colors */
     --primary: rgba(87,191,144,1.00);
@@ -16,5 +19,11 @@
     --black: rgba(0,0,0,1.00);
 
     /* Font */
-    --link: 
+    --link: normal 600 18px 'Poppins' system-ui;
+    --h-h1: normal 600 60px "Poppins", system-ui;
+    --h-h2: normal 600 48px "Poppins", system-ui;
+    --h-h3: normal 600 36px "Poppins", system-ui;
+    --h-h4: normal 600 22px "Poppins", system-ui;
+    --p-small: normal 400 14px "Poppins", system-ui;
+    --p-medium: normal 400 20px "Poppins", system-ui;
 }
