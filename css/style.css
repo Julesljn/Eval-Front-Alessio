@@ -37,10 +37,12 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .body {
     padding: 0 300px;
+    background-color: var(--white);
 }
 
 .header {
@@ -219,9 +221,22 @@
     display: flex;
     justify-content: space-between;
 }
-
 .coupons__title {
     font: var(--h-h2);
+}
+.coupons__title::before {
+    content: "";
+    bottom: -2500px;
+    left: -300px;
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    border: 70px solid var(--primary);
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(40deg);
+    clip-path: inset(0 0 50% 0);
+    z-index: -1;
 }
 
 .coupons__ctnParagraphs {
@@ -234,6 +249,8 @@
 
 .career {
     margin-bottom: 124px;
+    position: relative;
+    background-color: var(--white);
 }
 
 .career__ctnTop {
