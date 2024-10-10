@@ -83,7 +83,8 @@
 
 .header__btn,
 .aboutUs__btn,
-.career__btn {
+.career__btn,
+.contact__ctnTextBtn {
     color: var(--primary);
     font: var(--link);
     padding: 16px 42px;
@@ -221,9 +222,11 @@
     display: flex;
     justify-content: space-between;
 }
+
 .coupons__title {
     font: var(--h-h2);
 }
+
 .coupons__title::before {
     content: "";
     bottom: -2500px;
@@ -350,13 +353,81 @@
 .bar {
     border-right: 1px solid var(--black);
 }
+
 .footer__socialMedia {
     display: flex;
     gap: 14px;
     align-items: center;
 }
+
 .footer__socialMedia--item {
     width: 24px;
     height: 24px;
     cursor: pointer;
+}
+.contact {
+    display: flex;
+    margin-top: 160px;
+}
+.contact__ctnText {
+    width: 50%;
+}
+.contact__form {
+    width: 50%;
+}
+.contact__title {
+    font: var(--h-h1);
+}
+.contact__text {
+    margin: 32px 0 24px 0;
+    font: var(--p-medium);
+    width: 70%;
+}
+.contact__ctnArticle {
+    display: flex;
+    margin-bottom: 42px;
+}
+.contact__article {
+    width: 50%;
+}
+.contact__articleTitle {
+    font: var(--h-h4);
+    margin-bottom: 12px;
+}
+.contact__articleText {
+    font: var(--p-small);
+}
+.contact__form {
+    position: relative;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact__form::before {
+    content: "";
+    background-color: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 32px;
+}
+.form__title {
+    font: var(--h-h4);
+}
+.form__input {
+    width: 97%;
+    height: 52px;
+    border-radius: 8px;
+    padding-left: 16px;
+    border: 1px solid var(--500);
+    margin-top: 12px;
+}
+.form__label {
+    font: var(--p-medium);
+}
+.textarea {
+    padding-top: 16px;
+    height: 213px;
 }
