@@ -4,6 +4,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Poppins-bold';
     src: url('/fonts/Poppins-SemiBold.woff2') format('woff2');
@@ -56,7 +57,8 @@
     z-index: 1000;
 }
 
-.header__img {
+.header__img,
+.footer__img {
     width: 200px;
     height: 48px;
 }
@@ -77,29 +79,35 @@
     }
 }
 
-.header__btn, .aboutUs__btn {
+.header__btn,
+.aboutUs__btn,
+.career__btn {
     color: var(--primary);
     font: var(--link);
     padding: 16px 42px;
     border: solid 1px var(--primary);
     border-radius: 360px;
     transition: 0.2s;
+
     &:hover {
         color: var(--white);
         background-color: var(--primary);
         transition: 0.2s;
     }
 }
+
 .hero {
     padding-top: 128px;
     display: flex;
     align-items: center;
 }
+
 .hero__title {
     font: var(--h-h1);
     width: 80%;
     margin-bottom: 150px;
 }
+
 .hero__sponsor {
     position: absolute;
     display: flex;
@@ -111,11 +119,13 @@
     top: 57%;
 
 }
+
 .aboutUs {
     margin: 128px 0;
     display: flex;
     gap: 84px;
 }
+
 .aboutUs__ctnText {
     display: flex;
     flex-direction: column;
@@ -123,29 +133,36 @@
     justify-content: center;
     gap: 24px;
 }
+
 .aboutUs__title {
     font: var(--h-h2);
 }
+
 .aboutUs__text {
     font: var(--p-medium);
     width: 70%;
 }
+
 .aboutUs__btn {
     margin-bottom: 50px;
 }
+
 .solution {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .solution__title {
     font: var(--h-h3);
     margin-bottom: 46px;
 }
+
 .solution__ctnCard {
     display: flex;
     gap: 24px;
 }
+
 .solution__card {
     padding: 72px 38px 180px 38px;
     width: 50%;
@@ -154,13 +171,16 @@
     z-index: 0;
     border-radius: 32px;
 }
+
 .card__title {
     font: var(--h-h3);
     margin-bottom: 30px;
 }
+
 .card__text {
     font: var(--p-medium);
 }
+
 .solution__card::before,
 .solution__card::after {
     content: "";
@@ -185,24 +205,141 @@
     transform: rotate(150deg);
     clip-path: inset(50% 0 0 0);
 }
+
 .solution__card--green {
     --card-bg: var(--primary);
 }
+
 .solution__card--blue {
     --card-bg: var(--secondary);
 }
+
 .coupons {
     margin: 129px 0;
     display: flex;
     justify-content: space-between;
 }
+
 .coupons__title {
     font: var(--h-h2);
 }
+
 .coupons__ctnParagraphs {
     font: var(--p-medium);
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.career {
+    margin-bottom: 124px;
+}
+
+.career__ctnTop {
+    display: flex;
+}
+
+.career__ctnText {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.career__title {
+    font: var(--h-h2);
+}
+
+.career__text {
+    font: var(--p-medium);
+    width: 70%;
+}
+
+.career__ctnArticle {
+    margin: 24px 0;
+    display: flex;
+    gap: 24px;
+}
+
+.career__article {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: var(--100);
+    border-radius: 24px;
+    padding: 38px;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.career__articleCtnText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.career__articleTitle {
+    font: var(--h-h4);
+}
+
+.career__articleText {
+    font: var(--p-small);
+}
+
+.career__link {
+    font: var(--link);
+    color: var(--primary);
+    float: right;
+}
+
+.footer {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.footer__ctnMain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 30px;
+    border-right: 1px solid var(--black);
+}
+
+.footer__ctnSec {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 25%;
+    padding: 0 30px;
+
+    span {
+        font: var(--h-h4);
+    }
+
+    p {
+        font: var(--p-small);
+    }
+}
+
+.footer__ctnMainText {
+    font: var(--p-small);
+}
+
+.bar {
+    border-right: 1px solid var(--black);
+}
+.footer__socialMedia {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.footer__socialMedia--item {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
