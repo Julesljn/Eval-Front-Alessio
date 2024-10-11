@@ -431,3 +431,32 @@
     padding-top: 16px;
     height: 213px;
 }
+.form__submit {
+    font: var(--link);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    background-color: transparent;
+    border-radius: 360px;
+    padding: 16px 42px;
+    transition: 0.2s;
+
+    &:hover {
+    color: var(--white);
+    background-color: var(--secondary);
+    transition: 0.2s;
+    }
+}
+.form__ctnCheckBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.form__checkBox {
+    width: 24px;
+    height: 24px;
+}
+.form__labelCheckBox,
+input,
+textarea {
+    font: var(--p-small);
+}

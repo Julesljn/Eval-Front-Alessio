@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrustDeals</title>
     <link rel="stylesheet" href="/css/style.css">
-    <meta
-        content="At TrustDeals we connect brands to millions of smart shoppers worldwide. Give your brand a boost with the tools TrustDeals offers!">
+    <meta content="At TrustDeals we connect brands to millions of smart shoppers worldwide. Give your brand a boost with the tools TrustDeals offers!" name="description">
 </head>
 
 <body class="body">
@@ -37,28 +36,33 @@
                     <article class="contact__article">
                         <h2 class="contact__articleTitle">Our Office</h2>
                         <ul class="footer__socialMedia">
-                            <li><img class="footer__socialMedia--item" src="/images/icons/Linkedin.svg" alt=""></li>
-                            <li><img class="footer__socialMedia--item" src="/images/icons/Mail.svg" alt=""></li>
+                            <li><img class="footer__socialMedia--item" src="/images/icons/Linkedin.svg" alt="LinkedIn Icon"></li>
+                            <li><img class="footer__socialMedia--item" src="/images/icons/Mail.svg" alt="Mail Icon"></li>
                         </ul>
                     </article>
                 </div>
                 <a class="contact__ctnTextBtn" href="">Support</a>
             </div>
-            <div class="contact__form">
+            <form class="contact__form" action="/contact/submit" method="post" enctype="multipart/form-data">
                 <span class="form__title">Contact us</span>
                 <div>
                     <label class="form__label" for="name">Name</label>
-                        <input class="form__input" type="text" name="name" placeholder="Name">
+                        <input id="name" class="form__input" type="text" name="name" placeholder="Name">
                 </div>
                 <div>
                     <label class="form__label" for="email">Email</label>
-                        <input class="form__input" type="email" name="email" placeholder="client@trustdeals.org">
+                        <input id="email" class="form__input" type="email" name="email" placeholder="client@trustdeals.org">
                 </div>
                 <div>
-                    <label class="form__label" for="email">Email</label>
-                        <textarea class="form__input textarea" type="email" name="email" placeholder="Message"></textarea>
+                    <label class="form__label" for="message">Message</label>
+                        <textarea id="message" class="form__input textarea" name="message" placeholder="Message"></textarea>
                 </div>
-            </div>
+                <div class="form__ctnCheckBox">
+                    <input id="condition" class="form__checkBox" type="checkbox" name="condition">
+                    <label class="form__labelCheckBox" for="condition">I accept the privacy policy and the terms and conditions</label>
+                </div>
+                <button class="form__submit">Submit Now</button>
+            </form>
         </section>
     </main>
 </body>
